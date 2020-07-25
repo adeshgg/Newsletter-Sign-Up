@@ -35,10 +35,10 @@
        
         var jsonData = JSON.stringify(data); // converting js object into json format
         var options = {
-            url : "https://us8.api.mailchimp.com/3.0/lists/7cbe07bc4a",
+            url : <writeURL>,
             method :'POST',
             headers : {
-                "Authorization" : "adesh dfedcec98dbb51fb0575d794f52ec506-us8"
+                "Authorization" : <authorization>
             },
             body : jsonData // body defined in express to post data via api's
         };
@@ -66,14 +66,5 @@
     });
 
 
-    // API KEY : 
-    // dfedcec98dbb51fb0575d794f52ec506-us8
-
-    // Audience Id :
-    // 7cbe07bc4a
-
-
-    // To authenticate a request using an API key, follow these steps.
-
-    // Enter any string as the username.
-    // Enter your API Key as the password.
+   
+   
